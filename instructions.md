@@ -7,6 +7,10 @@ git switch -c feature/my-feature
 ```
 Replace "my-feature" with the name of the feature you are implementing, example `git switch -c feature/login`
 
+# To test your written function
+Make a simple "test.cpp" file and write a main that has `#include "functions.h"` and calls the function. You can run this file using:
+g++ -std=c++11 test.cpp functions.cpp -o test.out
+
 # Save your work
 
 ```
