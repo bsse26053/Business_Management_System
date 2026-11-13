@@ -1,19 +1,17 @@
-all: ./a.out
+CXX = g++
+CXXFLAGS = -std=c++11
 
-compRun:
-	g++ -std=c++11 main.cpp functions.cpp -o r.out
+run:
+	$(CXX) $(CXXFLAGS) main.cpp functions.cpp -o r.out
+	./r.out
 
-compTest:
-	g++ -std=c++11 test.cpp functions.cpp -o a.out
+test:
+	$(CXX) $(CXXFLAGS) test.cpp functions.cpp -o test.out
+	./test.out
 
-compTestHidden:
-	g++ -std=c++11 test_h.cpp functions.cpp -o h.out
-
-test: clean compTest; ./a.out
-
-test_h: clean compTestHidden; ./h.out
-
-run: clean compRun; ./r.out
+test_h:
+	$(CXX) $(CXXFLAGS) test_h.cpp functions.cpp -o test_h.out
+	./test_h.out
 
 clean:
 	rm -f *.out
