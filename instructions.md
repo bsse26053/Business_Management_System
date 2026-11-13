@@ -16,17 +16,19 @@ g++ -std=c++11 test.cpp functions.cpp -o test.out
 ```
 git add .
 git commit -m "Meaningful Commit Message"
-git push -u origin feature/my-feature
 ```
+
+And then, if its the first time youre pushing for this feature use `git push -u origin feature/my-feature`
+Otherwise, use `git push`
 
 The commit message should tell exactly what you did. It should be short, concise and complete.
 
 # Naming Convention
 
-For variables use all lower case with multiple words sperated by an underscore. '_'
-Example: login_attemps
+For variables use all lower case with multiple words separated by an underscore. '_'
+Example: login_attempts
 
-For fucntions use camel case.
+For functions use camel case.
 Example: calculateProfit
 
 # Ignoring files
@@ -34,4 +36,4 @@ Example: calculateProfit
 If there is a test or temp file in your folder, delete it before executing the save commands or if you need it, add it's name to the bottom of '.gitignore' so that everyone doesnt get it.
 
 # Note
-The functions modules will be in the pdf and instructions on how to write them. If the file is not present, re-run the pull commands from the top. And if the file still doenst appear, that means Ayan hasnt made it yet.
+The functions modules will be in the pdf and instructions on how to write them. If the file is not present, re-run the pull commands from the top. And if the file still doesn't appear, that means Ayan hasn't made it yet.

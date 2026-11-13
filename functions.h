@@ -4,7 +4,6 @@
 #include <string>
 using namespace std;
 
-// write the function prototypes here
-// For instructions see the instructions file
+// Function declarations / prototypes
 
 #endif
